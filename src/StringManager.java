@@ -1,19 +1,19 @@
 public class StringManager {
-    private String content;
+    private String fileContent;
 
-    StringManager(String content) {
-        this.content = content;
+    StringManager(String fileContent) {
+        this.fileContent = fileContent;
     }
 
     int getNumberOfCharacters() {
-        return content.length();
+        return fileContent.length();
     }
 
     int getNumberOfWord() {
-        return content.split("\\s").length;
+        return fileContent.split("\\s").length;
     }
 
     int getNumberOfLines() {
-        return content.split("\n").length;
+        return fileContent.split("\n").length;
     }
 }
